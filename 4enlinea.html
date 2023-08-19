@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4enlinea.css">
+    <script src="4enlinea.js"></script>
+    <title>4 en linea</title>
+</head>
+
+<body onload="ocultartodo(); recargarDatos()">
+
+    <div id="Principal">
+        <h1 id="title">4 EN LINEA</h1>
+        <div id="botonesPrincipal">
+            <button id="nuevaPartida" onclick="mostrar('DatosJugadores')"><img src="racing-flag.png" alt=""> Nueva Partida</button><br>
+            <button id="reanudar" onclick="mostrar('cargarPartidas')"><img src="reanudar.png" alt=""> Reanudar Partida</button><br>
+            <button id="ranking" onclick="mostrar('rankingTabla')"><img src="trofeo.png" alt="">Ranking</button><br>
+            <button id="manual" onclick="mostrar('manualUser')"><img src="libro.png" alt=""> Manual de Usuario</button>
+        </div>
+    </div>
+
+    <div id="DatosJugadores" class="formulario">
+        <h2 id="title2">Ingresar nombre de jugadores</h2>
+        <div class="input-info">
+            <label>Jugador 1:</label><input type="text" id="jugador1">
+        </div>
+        <div class="input-info">
+            <label>Jugador 2:</label><input type="text" id="jugador2">
+        </div>
+
+        <button id="comenzarP" onclick="iniciarpartida()">Comenzar</button>
+        <button id="volverInicio" onclick="mostrar('Principal')">Volver</button>
+    </div>
+
+    <div id="comenzandoP" class="formulario">
+        <h2>Comenzando partida en:</h2>
+        <div class="input-info">
+            <p id="regresiva"></p>
+        </div>
+    </div>
+
+    <div id="juego">
+        <div class="cronometro">
+            <h3 id='crono'>00:00:00</h3>
+        </div>
+        <div id="JugadorN1">
+            <h2 id="J1"></h2>
+            <p id="temporizador1" style="font-size: 23px; font-weight: bold;">00</p>
+        </div>
+        <div id="JugadorN2">
+            <h2 id="J2"></h2>
+            <p id="temporizador2" style="font-size: 23px; font-weight: bold;">00</p>
+        </div>
+
+        <table id="TB_juego" border="2px">
+            <thead>
+                <tr align="center">
+                    <td><img id="c0" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(0)"></td>
+                    <td><img id="c1" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(1)"></td>
+                    <td><img id="c2" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(2)"></td>
+                    <td><img id="c3" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(3)"></td>
+                    <td><img id="c4" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(4)"></td>
+                    <td><img id="c5" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(5)"></td>
+                    <td><img id="c6" src="caret-abajo.png" alt="flecha abajo" onclick="PosicionarFicha(6)"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="botonespartida">
+        <h3>Opciones de partida</h3>
+        <button id="p1" onclick="pause(1)"><img src="pausa.png" alt=""></button>
+        <button id="p2" onclick="pause(0)" style="display: none;"><img src="Play.png" alt=""></button>
+        <BUTTON id="guard" onclick="guardar()">Guardar</BUTTON>
+        <BUTTON id="rein" onclick="reiniciar()">Reiniciar</BUTTON>
+        <BUTTON id="sali" onclick="salir()">Salir</BUTTON>
+    </div>
+
+    <div id="cargarPartidas">
+        <div id="tituloReanudar">
+            <button onclick="mostrar('Principal')" id="volverInicio2"><img src="regresar.png" alt=""> Volver</button>
+            <h2>Reanudar partidas guardadas</h2>
+        </div>
+
+        <table id="TB_partidas" border="2px">
+            <thead>
+                <tr>
+                    <td>Nombre de la partida</td>
+                    <td>Fecha de guardado</td>
+                </tr>
+            </thead>
+            <tbody id="partidasJugadas">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="winner" class="formulario">
+        <h1 id="titulog">El ganador es:</h1>
+        <h2 id="ganador"></h2>
+
+        <BUTTON id="guard" onclick="guardar()">Guardar</BUTTON>
+        <BUTTON id="rein" onclick="reiniciar()">Reiniciar</BUTTON>
+        <BUTTON id="sali" onclick="salir()">Salir</BUTTON>
+    </div>
+
+    <div id="rankingTabla">
+        <div id="tituloRanking">
+            <button onclick="mostrar('Principal')" id="volverInicio2"><img src="regresar.png" alt=""> Volver</button>
+            <h2>Ranking de ganadores</h2>
+        </div>
+
+        <table id="TB_ranking" border="2px">
+            <thead>
+                <tr>
+                    <td>Posicion</td>
+                    <td>Nombre del Usuario</td>
+                    <td>Movimientos</td>
+                </tr>
+            </thead>
+            <tbody id="rankingGanadores">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="manualUser">
+        <div id="tituloManual">
+            <button onclick="mostrar('Principal')" id="volverInicio2"><img src="regresar.png" alt=""> Volver</button>
+            <h2>Manual de Usuario</h2>
+        </div>
+        <!--PDF Manual de usuario-->
+        <div id="manualUser2">
+            <iframe src="Manual de usuario.pdf" style="width:70%; height:600px;" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+</body>
+
+</html>

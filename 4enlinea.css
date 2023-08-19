@@ -1,0 +1,482 @@
+body {
+    background-color: rgb(151, 200, 243);
+}
+
+#TB_juego thead {
+    background: white;
+    border-collapse: collapse;
+    border-color: white;
+}
+
+#TB_juego {
+    position: absolute;
+    align-items: center;
+    top: 11%;
+    left: 32%;
+    background: rgb(28, 76, 124);
+    border-collapse: collapse;
+    border-color: rgb(28, 76, 124);
+}
+
+#Principal {
+    text-align: center;
+}
+
+
+#botonesPrincipal {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 30px;
+}
+
+#botonesPrincipal img {
+    vertical-align: middle;
+}
+
+#title {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #036;
+    padding: 6px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    margin: 3px;
+    color: #FFF;
+}
+
+#title2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #036;
+    padding: 6px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    margin: 0px;
+    color: #FFF;
+}
+
+#nuevaPartida {
+    border: 1px solid #FFF;
+    background-color: rgb(56, 184, 17);
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#nuevaPartida:hover {
+    background-color: rgba(56, 184, 17, 0.644);
+    cursor: pointer;
+}
+
+#reanudar {
+    border: 1px solid #FFF;
+    background-color: rgb(233, 99, 50);
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#reanudar:hover {
+    background-color: rgba(233, 99, 50, 0.644);
+    cursor: pointer;
+}
+
+#ranking {
+    border: 1px solid #FFF;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#ranking:hover {
+    background-color: rgba(153, 205, 50, 0.644);
+    cursor: pointer;
+}
+
+#manual {
+    border: 1px solid #FFF;
+    background-color: rgb(59, 59, 250);
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#manual:hover {
+    background-color: rgb(59, 59, 250, 0.644);
+    cursor: pointer;
+}
+
+.formulario {
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+
+}
+
+.formulario .input-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center ;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    
+}
+
+.formulario input {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+#comenzarP{
+    border: 1px solid #FFF;
+    background-color: rgb(56, 184, 17);
+    border-radius: 10px;
+    font-size: 18px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: 180px;
+    margin: 10px;
+}
+
+#comenzarP:hover {
+    background-color: rgba(56, 184, 17, 0.644);
+    cursor: pointer;
+}
+
+#volverInicio{
+    border: 1px solid #FFF;
+    background-color: rgb(253, 62, 62);
+    border-radius: 10px;
+    font-size: 18px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: 180px;
+    margin: 10px;
+}
+
+#volverInicio:hover {
+    background-color: rgba(253, 62, 62, 0.644);
+    cursor: pointer;
+}
+
+#juego{
+    font-family: "Courier New", Courier, monospace;
+}
+
+.cronometro{
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    padding: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+#JugadorN1{
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    padding: 25px;
+    border: 5px solid rgb(252, 3, 3);
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+#JugadorN2{
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    padding: 25px;
+    border: 5px solid yellow;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+#botonespartida{
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    padding: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+#botonespartida img{
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+#botonespartida button{
+    height: 40px;
+    width: 100px;
+    margin: 5px;
+}
+
+#guard{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+}
+
+#rein{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+}
+#sali{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/*REANUDAR TABLA*/
+
+#cargarPartidas {
+    font-family: "Courier New", Courier, monospace;
+}
+#cargarPartidas img{
+    vertical-align: middle;
+}
+#tituloReanudar button{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+#tituloReanudar h2{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+#volverInicio2 {
+    border: 1px solid #FFF;
+    background-color: rgb(253, 62, 62);
+    border-radius: 10px;
+    font-size: 18px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#volverInicio2:hover {
+    background-color: rgba(253, 62, 62, 0.644);
+    cursor: pointer;
+}
+
+#TB_partidas {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 30px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#TB_partidas td,
+#TB_partidas th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+#TB_partidas thead {
+    color: white;
+    background: #333;
+    border-collapse: collapse;
+    border-color: white;
+}
+
+#TB_partidas th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#TB_partidas td {
+    vertical-align: center;
+}
+#TB_partidas tbody {
+    background-color: white;
+}
+
+#reanudar2 {
+    background-color: rgb(233, 99, 50);
+    border-radius: 10px;
+    font-size: 16px;
+    text-shadow: 0, 0, 0, 1;
+    color: #FFF;
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+#reanudar2:hover {
+    background-color: rgba(233, 99, 50, 0.644);
+    cursor: pointer;
+}
+
+/*RANKING TABLA*/
+
+#rankingTabla {
+    font-family: "Courier New", Courier, monospace;
+}
+#rankingTabla img{
+    vertical-align: middle;
+}
+#tituloRanking button{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+#tituloRanking h2{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#TB_ranking {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 30px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#TB_ranking td,
+#TB_ranking th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+#TB_ranking thead {
+    color: white;
+    background: #333;
+    border-collapse: collapse;
+    border-color: white;
+}
+
+#TB_ranking th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#TB_ranking td {
+    vertical-align: center;
+}
+#TB_ranking tbody {
+    background-color: white;
+}
+
+#manualUser {
+    font-family: "Courier New", Courier, monospace;
+}
+#manualUser img {
+    vertical-align: middle;
+}
+
+#tituloManual button{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+#tituloManual h2{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#manualUser2 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 80%;
+    padding: 25px;
+}
+
